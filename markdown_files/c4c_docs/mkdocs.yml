@@ -1,0 +1,126 @@
+site_name: SAP Cloud for Customer Server-Side Integration (SSI)
+plugins:
+    - search:
+         separator: '[\s\-\.]+'
+site_dir: ssi/docs/kb/
+site_url: https://revenuegrid.com/ssi/docs/kb/
+docs_dir: 'src'
+nav:
+    - 'Overview & Essentials':
+        - What is the SSI Solution: 'articles/What-Is-C4C-SSI.md'
+        - Privacy & Security: 'articles/Privacy-and-Security.md'
+        - Supported enviroments: 'articles/supported-environments.md'
+        - Other resources: 'articles/General-Information.md'
+    - 'Setup':
+        - Deployment and configuring SSI by Admin: 'articles/How-to-Configure-Admin.md'
+        - Configuring SSI by User: 'articles/How-to-Configure-User.md'
+        - Set up SSI for Gmail: 'articles/set-up-for-gmail.md'
+        - How to activate SSI Sync Engine: 'articles/Sync-Activation.md'
+        - Set Up Impersonated Access for Mass Deployment by Admin: 'articles/Configure-Impersonation.md'
+    - 'Get Started':
+        - Introduction: 'articles/Introduction.md'
+        - Open SSI Sidebar: 'articles/How-to-Open-C4C-SSI-Sidebar.md'
+        - Using SSI (consolidated guide): 'articles/How-to-Use-C4C-SSI.md'
+        - Using in Outlook on the Web: 'articles/Open-in-Outlook-Web.md'
+        - Using in Gmail: 'articles/use-with-gmail.md'
+        - Using on mobile devices: 'articles/mobile-devices.md'
+        - Functions comparison&colon; Add-In vs. Sync Engine : 'articles/Add-In-vs-Sync.md'
+    - 'Using the Product':
+        - 'Saving activities':
+            - How to sync E-Mails: 'articles/Emails-Processing.md'
+            - How to sync Calendar items: 'articles/Events-Processing.md'
+            - Initial search & applied filters: 'articles/initial-search-and-applied-filters.md'
+            - Autosaving of e-mails and events: 'articles/autosaving-pattern.md'
+            - Linking related objects: 'articles/linking-related-objects.md'
+            - Blocklisted e-mails and domains: 'articles/blocklist.md'
+#           - Saving attachements via SSI: 'articles/Attachments-Handling.md'
+            - Canceling and deleting Appointments and Visits: 'articles/canceling-deleting-calendar-items.md'
+            - Calendar items sync filter and auto-sync feature: 'articles/calendar-items-sync-filter.md'
+            - Linking meeting attendees with SAP records: 'articles/linking-meeting-attendees.md'
+            - Event Sharing by Attendee feature: 'articles/sharing-by-attendee.md'
+            - Recurring calendar activities: 'articles/recurring-activities.md'
+            - Encrypted and signed e-mails: 'articles/encrypted-and-signed-emails.md'
+        - 'Sidebar functions':
+            - Save E-Mail and Save Event dialogs: 'articles/Save-Dialog.md'
+            - Create SAP records via Sidebar: 'articles/Create-Records.md'
+            - Search SAP records via Sidebar: 'articles/Search-Records.md'
+        - 'Synchronization functions':
+            - Synchronization overview: 'articles/C4C-SSI-Sync-Overview.md'
+            - How to sync Contacts: 'articles/Contacts-Handling.md'
+            - Address sync limitation: 'articles/address-sync-limitation.md'
+            - Google Contacts e-mail address synchronization: 'articles/google-contacts-email-address-sync.md'
+            - Smart Description&colon; how it works: 'articles/smart-description.md'
+    - 'User Guide':
+        - Localization configuring: 'articles/configuring-localization.md'
+        - Using SSI Sync Dashboard: 'articles/Synchronization-Dashboard.md'
+        - How to access SSI settings profile: 'articles/How-to-Open-Your-C4C-SSI-Settings-Profile.md'
+        - Customizing SSI Add-In settings: 'articles/Customization-Settings-Addin.md'
+        - Customizing SSI Synchronization settings: 'articles/Customization-Settings-Sync.md'
+    - 'Admin Guide':
+        - Server-Side Integration logs: 'articles/ssi-logs.md'
+        - Work with SAP API responses and payloads: 'articles/c4c-api-responces-and-payloads.md'
+        - Allowlist the IP addresses and other related resources: 'articles/allowlist-ip-addresses.md'
+    - 'Troubleshooting':
+        - Synchonization issues: 'articles/Sync-Issues-Troubleshooting.md'
+        - Synchronization errors: 'articles/sync-errors.md'
+        - Sync Engine error codes table: 'articles/Sync-Error-Codes.md'
+        - How to obtain SAP metadata: 'articles/obtain-metadata.md'
+        - <i>"Add-In disabled to help keep you safe"</i> error: 'articles/Add-In-Keep-Safe.md'
+        - <i>"Add-In could not be started"</i> error: 'articles/Troubleshooting-Add-In-Could-Not-Be-Started.md'
+        - <i>"Browser version is not supported"</i> error: 'articles/Browser-Version-Troubleshooting.md'
+        - Multiple instances of Add-In installed: 'articles/multiple-instances.md'
+        - Add-In not loading in MS Outlook: 'articles/add-in-not-loading-in-outlook.md'
+        - <i>"SSI for MS Outlook is not supported for this user"</i> error: 'articles/ssi-not-supported-for-this-user.md'
+        - Add-In view problems in MS Outlook 2013: 'articles/add-in-view-problems-in-outlook-2013.md'
+        - SSI icon is greyed out in the ribbon: 'articles/icon-greyed-out.md' 
+        - <i>"Need Admin Approval"</i> error: 'articles/Need-Admin-Approval.md'
+        - <i>"Forbidden"</i> error after Key User deletion: 'articles/forbidden-error-key-user-deletion.md'
+        - <i>"Unable to validate the client identity token"</i> error: 'articles/identity-token-error.md'
+        - Auto-fill <i>"Assigned To"</i> for Tickets not working: 'articles/auto-fill-assigned-to-for-tickets-problem.md'
+        - <i>"ISS-046 – E-Mail is already taken, enter a different one"</i> error: 'articles/iss-046-email-is-taken-enter-different.md'
+        - <i>"ISSM-004 – Foreign customization detected sync"</i> error: 'articles/issm-004-foreign-customization-sync-error.md'
+        - ExchSMTPEmailAddress duplicates the identity of some employees: 'articles/duplication-of-identity.md'
+        - How to capture Add-In trace (HAR file): 'articles/capture-har-file.md'
+    - Questions & Answers: 'articles/questions-and-answers.md'
+    - <b>Release notes and updates</b>: 'articles/release-notes.md'
+
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: True
+        separator: "_"
+    - sane_lists
+    - tables
+    - meta
+    - fenced_code
+    - admonition
+    - footnotes 
+
+extra:
+    version: 1.2    #2304: new nav, logo, favicon; add backtotop feature
+
+copyright: 'Copyright &copy; SAP Cloud for Customer 2023'
+
+extra_css:
+    - assets/css/extra.css
+
+theme:
+  name: 'material'
+  custom_dir: material
+  language: 'en'
+  logo: 'assets/images/stack-of-books-32.png'
+  palette:
+    primary: 'blue'
+    accent: 'grey'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  favicon: 'assets/images/stack-of-books-32.png'
+  features:
+    - content.tabs.link
+  #  - navigation.instant
+    - navigation.tracking
+  #  - navigation.tabs
+    - navigation.top
+    - search.suggest
+    - search.share

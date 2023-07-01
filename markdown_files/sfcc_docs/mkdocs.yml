@@ -1,0 +1,410 @@
+site_name: Revenue Grid Knowledge Base
+plugins:
+    - macros
+    - search:
+        separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+site_dir: helpcenter/
+site_url: https://docs.revenuegrid.com/
+docs_dir: 'src'
+nav:
+  - <b>About</b>:
+    - index.md
+    - Supported Salesforce editions: ri/fast/articles/Supported-Salesforce-Editions.md
+    - Overcoming Firewall issues: articles/Overcoming-Firewall-Issues.md
+    - Grant login access: ri/fast/articles/grant-account-login-access.md
+  - <b>Productivity & Activity Capture</b>:
+    - ri/fast/index.md
+    - Overview:
+      - Privacy and Security: ri/fast/articles/Privacy-and-Security.md # do we need a separate article?
+      - Sync and Add-In functions: ri/fast/articles/AddIn-vs-Sync-Functions.md
+      - Functionality comparison: ri/fast/articles/functionality-comparison.md
+      - Licenses and Pricing: ri/fast/articles/Subscription-Plans-&-Pricing.md # do we need it here?
+      - Supported environments:
+        - Email servers: ri/fast/articles/Supported-Email-Services.md
+        - Email clients for Office 365 (with Exchange Online plan): ri/fast/articles/Supported-Email-Clients-for-Microsoft-Office-365-(with-Exchange-Online-plan).md
+        - Email clients for Exchange 2010: ri/fast/articles/Supported-Email-Clients-for-Microsoft-Exchange-2010.md # remove as deprecated?
+        - Email clients for Exchange 2016, 2019: ri/fast/articles/Supported-Email-Clients-for-Microsoft-Exchange-2013,-2016.md
+        - Email clients for Gmail: ri/fast/articles/Supported-Email-Clients-for-Gmail.md
+    - Setup:
+      - Install for Office 365: ri/fast/articles/How-to-Install-and-Run-the-Solution-for-Office-365-Mailboxes.md
+      - Install in Outlook for MacOS: ri/fast/articles/How-to-Install-the-Solution-in-MS-Outlook-for-Mac.md
+      - Install for Office &#8211; all configurations: ri/fast/articles/How-to-Install-and-Run-the-Solution-all-configurations.md
+      - Install for Google Workspace: ri/fast/articles/How-to-Set-Up-the-Chrome-Extension-for-Salesforce-and-Gmail.md
+      - Install from a manifest file or URL: ri/fast/articles/How-to-Install-the-Add-In-from-an-XML-Manifest-File-or-URL.md
+      - Install on Android or iOS: ri/fast/articles/How-to-Install-the-Solution-using-a-Mobile-Device.md
+      - Registration wizard: ri/fast/articles/User-Registration-Wizard.md
+      - Activate synchronization: ri/fast/articles/Authorizing-Sync-Engine-to-Work-with-Your-Data.md
+      - Authorize mailbox access via O365 OAuth for EWS: ri/fast/articles/EWS-OAuth.md
+    - Get started:
+      - How RG Email Sidebar works: ri/fast/articles/How-the-Solution-Works-and-What-It-Syncs.md
+      - Actions in RG Email Sidebar: ri/fast/articles/All-User-Actions-in-Add-In-Sidebar.md
+      - Open Add-in in new Outlook on the Web: ri/fast/articles/Open-in-Outlook-Web.md
+      - RG Email Sidebar for Gmail: ri/fast/articles/Chrome-Extension-Intro.md
+      - Onboarding:
+        - Salesforce interactions: ri/fast/articles/Onboarding-Interactions.md
+        - Sharing Emails: ri/fast/articles/Onboarding-Emails.md
+        - Syncing Calendar items: ri/fast/articles/Onboarding-Calendars.md
+        - Syncing Tasks & Contacts: ri/fast/articles/Onboarding-Tasks.md
+    - Using the Product:
+      - Saving activities:
+        - Emails saving overview: ri/fast/articles/Saving-Emails-in-Salesforce-1.-Function-Overview.md
+        - Ways to save Emails: ri/fast/articles/Saving-Emails-in-Salesforce-2.-Ways-to-Save-an-Email-(Adaptive-view).md
+        - Save Calendar items: ri/fast/articles/Saving-Calendar-Items-in-Salesforce-(Adaptive-view).md
+        - Saving from Gmail: ri/fast/articles/Using-the-Solution-for-Salesforce-and-Gmail.md
+        - Initial search and applied filters: ri/fast/articles/Initial-Search-and-Applied-Record-Filters.md
+        - Saving dialogs: ri/fast/articles/Save-Email-Dialog.md
+        - Attachments saving: ri/fast/articles/Attachments-Handling-(Basic).md
+        - Auto-saving patterns: ri/fast/articles/Autosaving-Patterns.md
+        - Save all Emails in thread: ri/fast/articles/Save-All-Emails-in-a-Thread.md
+        - Crop previous Emails in thread: ri/fast/articles/Auto-Cropping-of-Previous-Messages-in-Email-Body.md
+        - Aliases handling: ri/fast/articles/MS-Exchange-Aliases-Handling.md
+        - Save enhanced emails to extra Salesforce objects: ri/fast/articles/saving-enhanced-email-to-unparsed-object.md
+        - Calendar sync patterns: ri/fast/articles/Calendar-Items-Sync-Special-Patterns-Attendees-Lists,-Private-Items,-Item-Unsharing-and-Deletion.md
+        - Calendar sync exceptions: ri/fast/articles/Calendars-Syncing-Exceptions.md
+        - Syncing Salesforce events to email client's calendar: ri/fast/articles/Create-New-Event.md
+        - Internal/blocklisted Emails: ri/fast/articles/How-to-Save-Internal-or-Blacklisted-Emails-in-Salesforce-(Adaptive-view).md
+        - Two blocklisting layers: ri/fast/articles/Two-Layers-Blacklisting.md
+        - Handle Inbox SPAM: ri/fast/articles/Inbox-SPAM-Handling-in-RG-Email-Sidebar.md
+        - Activities linking patterns: ri/fast/articles/Activities-Linking.md
+        - Object fields mapping: ri/fast/articles/Object-Fields-Mapping-Patterns.md
+      - Sidebar functions:
+        - Pin RG Email Sidebar: ri/fast/articles/Sidebar-Pinning.md
+        - Create new records: ri/fast/articles/Create-New-Records.md
+        - Search existing records: ri/fast/articles/Searching-for-Existing-Salesforce-Records-and-Creating-New-Records-(Adaptive-view).md
+        - View related objects: ri/fast/articles/Viewing-Salesforce-Records-Related-to-your-Email-(Adaptive-view).md
+        - Create a Task, Follow-up or Log a Call: ri/fast/articles/Log-A-Call.md
+        - Salesforce Activities: ri/fast/articles/Working-with-Activities.md
+        - Record Description and Quick Memo: ri/fast/articles/Record-Description-and-Add-Quick-Memo.md
+        - Open associated website or LinkedIn page: ri/fast/articles/Finding-Social-Profiles-of-Contacts,-Leads,-and-Accounts-(Classic-view).md
+        - Salesforce Chatter: ri/fast/articles/Using-Chatter.md
+        - Salesforce required fields and layouts: ri/fast/articles/How-the-Solution-Works-with-Required-Fields-and-Layouts-in-Salesforce.md
+        - Salesforce custom buttons: ri/fast/articles/Salesforce-Custom-Buttons-Support.md
+        - Stale Thread Reminder: ri/fast/articles/Stale-Thread-Reminder.md
+        - Smart actions:
+          - Time Slots in Outlook: ri/fast/articles/How-to-Send-Meeting-Time-Slots-(Adaptive-view).md #smart
+          - Book Me in Outlook: ri/fast/articles/Sharing-Calendar-Availability-(Adaptive-view).md #smart
+          - Time Slots in Gmail: ri/fast/articles/Time-Slots-Gmail.md #smart
+          - Book Me in Gmail: ri/fast/articles/Book-Me-Gmail.md #smart
+          - Invalidate Book Me link: ri/fast/articles/Invalidate-Book-Me.md #smart
+          - Salesforce Reports: ri/fast/articles/Salesforce-Reports.md #smart
+          - Salesforce Templates: ri/fast/articles/Using-Salesforce-Templates.md #smart
+          - Tracking Customer Engagement: ri/fast/articles/How-to-Use-the-Solution-s-Engagement-Panel.md #smart
+          - Tracking Email Opens: ri/fast/articles/Tracking-Customer-Engagement-with-Magic-Pixel-(Adaptive-view).md #smart
+        - Mobile devices:
+          - Using on Android devices: ri/fast/articles/Using-on-Android.md #mob
+          - Using on iOS devices: ri/fast/articles/Using-on-iPhone.md #mob
+        - Integrations:
+          - 360 Degree SMS: ri/fast/articles/Sending-and-Receiving-360-Degree-SMS-from-the-Sidebar.md #integrations
+          - Configure and use DocuSign Sidebar: ri/fast/articles/DocuSign-Standalone.md #integrations
+          - DocuSign in RG Email Sidebar: ri/fast/articles/How-to-work-with-DocuSign-Document-Storage-via-the-Sidebar.md #integrations
+      - Synchronization functions:
+        - Synchronization overview: ri/fast/articles/Synchronization-Engine-An-Overview.md
+        - Contacts syncing: ri/fast/articles/Synchronization-of-Contacts.md
+        - Tasks syncing: ri/fast/articles/Synchronization-of-Tasks.md
+        - Manage Tasks: ri/fast/articles/Managing-Tasks-(Classic-view).md # Deprecated?? create redirect to Synchronization-of-Tasks.md???
+        - Item Deduplication: ri/fast/articles/Item-Deduplication-Mechanisms.md
+        - Historical sync & time&nbsp;zones matching: ri/fast/articles/Historical-Sync-&-Timezones-Matching.md
+        - Smart Description: ri/fast/articles/Using-the-Smart-Description-Feature.md
+        - Special sync patterns: ri/fast/articles/Special-Sync-Options-Save-Events-As-Other-&-One-Way-Sync.md
+    - User settings:
+      - Connectivity settings:
+        - Renew account credentials: ri/fast/articles/Renewing-Exchange-and-Salesforce-Account-Credentials.md
+        - Change Email address (Office 365): ri/fast/articles/How-to-Change-Email-Address-in-Your-Product-Account-Office-365.md
+        - Change Salesforce account: ri/fast/articles/change-salesforce-creds.md
+        - Integration with Salesforce Customer / Partner Community: ri/fast/articles/Partner-Community-Integration.md
+        - Authorize Customer / Partner Community: ri/fast/articles/Partner-Community-Authorization.md
+        - Enable DocuSign integration: ri/fast/articles/Enabling-DocuSign-Integration-in-the-Sidebar.md
+      - Sync settings:
+        - Open Sync settings page: ri/fast/articles/How-to-Open-Sync-Dashboard-(Adaptive-view).md
+        - Configure Sync settings: ri/fast/articles/Configuring-Activities-Synchronization-Settings-rg.md
+        - (Legacy) Configure Sync settings: ri/fast/articles/Configuring-Activities-Synchronization-Settings.md
+        - Choose what to sync: ri/fast/articles/Choosing-What-to-Synchronize.md
+        - Blocklist Email addresses and domains: ri/fast/articles/Blocklisting-Email-Addresses-and-Domains.md
+        - View Sync statistics and connection statuses: ri/fast/articles/Viewing-Synchronization-Statistics-and-Connection-Statuses.md
+        - Handle sync issues: ri/fast/articles/Handling-Sync-Issues.md
+      - Customization settings:
+        - Sidebar customization: ri/fast/articles/Customization-Settings-Explained.md
+        - Add a custom object: ri/fast/articles/How-to-Add-A-Custom-Object.md
+        - Search by field setting: ri/fast/articles/Using-the-Search-by-List-Customization-Setting.md
+        - Create custom list view: ri/fast/articles/How-to-Create-a-Custom-List-View.md
+        - Enable country picklist for Contacts: ri/fast/articles/Country-Picklist.md # User settings > Customization section???
+        - Application settings: ri/fast/articles/Application-Settings.md
+        - Define record associations: ri/fast/articles/Defining-Record-Associations-(Smart-Linking).md
+        - Manage Smart Actions: ri/fast/articles/Manage-Smart-Actions.md
+        - Configure attachments saving: ri/fast/articles/Configure-Attachments-Saving-in-Salesforce.md
+        - Manage Sidebar Customizations: ri/fast/articles/Managing-Email-Sidebar-Customizations.md
+        - Customization page notifications: ri/fast/articles/Customization-Page-Notifications.md
+      - Misc. settings:
+        - Configure localizations: ri/fast/articles/localization.md
+        - Uninstall RG Email Sidebar: ri/fast/articles/Uninstalling-All-Product-Components.md
+        - Uninstall from Google Workspace: ri/fast/articles/Remove-Gmail.md
+    - Admin guide:
+      - Product deployment:
+        - Configure corporate firewall: ri/fast/articles/Overcoming-Firewall-Issues.md
+        - Available deployment scenarios: ri/fast/articles/Email-Integration-Full-Deployment-Scenarios.md
+        - EWS access connectivity: ri/fast/articles/Working-With-EWS.md
+        - MS Graph access connectivity: ri/fast/articles/MS-Graph.md
+        - Configure Impersonation for Office 365: ri/fast/articles/Impersonation-O365.md
+        - Configure Impersonation for Exchange on-premises: ri/fast/articles/Set-up-An-Impersonation-Service-Account.md
+        - Configure Impersonation &#8211; hybrid scenarios: ri/fast/articles/Impersonation-Alternative.md
+        - Configure Google Workspace service account: ri/fast/articles/Gmail-Service-Account.md
+        - Mass deployment for Office 365: ri/fast/articles/Mass-Deployment-of-the-Add-In-Office-365.md
+        - Mass deployment for Exchange 2016, 2019: ri/fast/articles/Mass-Deployment-of-the-Add-In-MS-Exchange.md
+        - Deployment for MS Graph: ri/fast/articles/Impersonation-Graph.md
+        - Mass deployment for Google Workspace: ri/fast/articles/Chrome-Extension-Mass-Deployment.md
+        - Mass provisioning for Google Workspace: ri/fast/articles/Gmail-Users-Mass-Provisioning.md
+        - Set up Sync and mailbox access via Impersonation: ri/fast/articles/Setting-Up-Impersonated-Access-and-Configuring-Mailbox-Access-for-Organizations-and-Users.md
+        - Mass autorization to Salesforce: ri/fast/articles/Set-up-Salesforce-Auth.md
+      - Admin panel:
+        - Log in to Admin panel: ri/fast/articles/How-to-Log-In-to-the-Admin-Panel.md
+        - Manage Profiles: ri/fast/articles/Managing-Organizations-via-the-Admin-Panel.md
+        - Manage Users: ri/fast/articles/Managing-Users-via-the-Solution-s-Admin-Panel.md
+        - Manage Licenses for users: ri/fast/articles/Managing-Plans-for-the-Users.md
+        - Return on Investment and user status tools: ri/fast/articles/Return-on-Investment-ROI-Usage-Efficiency-and-User-Setup-Status-Tools.md
+        - Monitor Users and Organizations: ri/fast/articles/Monitoring-Users-and-Organizations.md
+        - Special Admin panel settings: ri/fast/articles/Special-Admin-Panel-Settings.md
+        - Manage access to customization page: ri/fast/articles/How-to-Disable-Customization-Page-for-Specific-Users.md
+      - Managed packages:
+        - RG managed package: ri/fast/articles/Admin-Managed-Package.md
+        - Lightning Scheduler integration: ri/fast/articles/Configure-Lightning-Scheduler.md
+        - API Calls for Lightning Scheduler: ri/fast/articles/Lightning-Scheduler-API.md
+      - Widgets in Salesforce:
+        - Add widgets in Salesforce: ri/fast/articles/Dashboard-Salesforce.md
+        - Setup individualized widgets: ri/fast/articles/Dashboard-Users-Only.md
+        # - Dashboard widgets configuration: ri/fast/articles/Dashboard-RevenueGrid.md # decided to delete -> links to it removed, removed from search -> create redirect?
+      - Delegated & shared access:
+        - Delegated mailbox: ri/fast/articles/Delegated-Access-Emails.md
+        - Delegated calendars: ri/fast/articles/Using-MS-Outlook-Delegated-Calendars.md
+        - Using with Shared mailboxes: ri/fast/articles/Shared-Mailbox.md
+        - Convert shared mailbox to regular one: ri/fast/articles/Shared-Regular.md # how to
+      - Attachments handling and related settings: ri/fast/articles/Attachments-Handling-(Advanced).md
+      - Enable advanced calendaring: ri/fast/articles/Precondition-for-Enabling-Advanced-Calendar-Synchronization.md 
+      - Enable Calendar instant sync: ri/fast/articles/instant-sync.md
+      - Sync rooms availability to Salesforce calendar: ri/fast/articles/sync-rooms-to-salesforce-calendar.md
+      - Exchange integration via Apex class: ri/fast/articles/Exchange-Integration-Apex-Class.md
+      - Revenue Grid Scheduler API endpoints: ri/fast/articles/Scheduler-API-Endpoints.md
+      - Optional features list: ri/fast/articles/Optional-Features.md # maybe move
+      # - Setting Up Invisible Suite Managed Package in Salesforce: ri/fast/articles/Setting-Up-Invisible-Suite-Managed-Package-in-Salesforce.md # DEPRECATED w/ text; removed from search
+      # - Add the Attendees Management Component: ri/fast/articles/How-To-Add-the-Attendees-Management-Component.md # DEPRECATED w/out text; removed from search
+    - Troubleshooting:
+      - Authorize RG Sync in Azure / Office 365 admin settings: ri/fast/articles/Server-Auth.md
+      - Salesforce API calls limit: ri/fast/articles/Salesforce-API-Calls-Limit.md
+      - Sync issues error codes: ri/fast/articles/Sync-Issues-Troubleshooter.md
+      - RG widgets errors: ri/fast/articles/Dashboard-Troubleshooting.md #MP, widgets
+      - Diagnostic mode for troubleshooting: ri/fast/articles/Diagnostic-Mode.md
+      - Revoke a Mailbox Access Token: ri/fast/articles/Revoke-Token.md # how to
+      - Configure meeting rooms for EWS: ri/fast/articles/Rooms-List.md # how to - admin guide??
+      - Issues and errors:
+        - Add-in login redirect page endless loading: ri/fast/articles/redirect-page-endless-loading.md
+        - Add-in icons are greyed out: ri/fast/articles/Icon-Greyed-Out.md
+        - Add-in icons are greyed out on desktop Outlook: ri/fast/articles/Troubleshooting-Placeholder-Icon-Displayed.md
+        - Save Email button is greyed out: ri/fast/articles/save-button-greyed-out.md
+        - Add-in could not be started error: ri/fast/articles/Troubleshooting-Add-In-Could-Not-Be-Started.md
+        - Add-in has been disabled to keep you safe error: ri/fast/articles/Add-In-Keep-Safe.md
+        - Need Admin Approval error: ri/fast/articles/Need-Admin-Approval.md
+        - Browser version troubleshooting: ri/fast/articles/Browser-Version-Troubleshooting.md
+        - Salesforce OAuth error: ri/fast/articles/Salesforce-OAuth-Error.md
+        - Managed Package installation problem: ri/fast/articles/managed-package-installation-failed.md
+        - Unable to share or get Customization settings: ri/fast/articles/Unable-To-Share-or-Get-Customization-Settings.md
+        - Attachment display issues: ri/fast/articles/No-Attachments-in-Sidebar.md
+        - Unexpected email synchronization: ri/fast/articles/unexpected-email-synchronization.md
+        - Events duplication troubleshooting: ri/fast/articles/duplication-troubleshooting.md
+        - Events syncing issue: ri/fast/articles/events-reassign-syncing-issue.md
+        - Sync error caused by Contacts filters: ri/fast/articles/contacts-filters-sync-error.md
+        - Contacts sync issue on iOS devices: ri/fast/articles/Sync-and-iPhone-Contacts-App-Issue.md #mob -> review the article!!
+        - Book Me link displays incorrect time: ri/fast/articles/Book-Me-Link-displays-wrong-time.md
+        - Book Me events linked to wrong contact: ri/fast/articles/events-linked-to-wrong-contact.md
+      - How to's:
+        - Clear Edge cache & cookies: ri/fast/articles/Clearing-Browser-Cache-and-Cookies-to-Refresh-the-Add-In.md # how to
+        - Clear cache on MacOS: ri/fast/articles/How-to-Clear-Outlook-Add-In-s-Cache-on-macOS.md # how to
+        - Export Outlook items: ri/fast/articles/how-to-export-items-from-outlook.md # how to
+        - Obtain Outlook add-in manifests: ri/fast/articles/how-to-obtain-add-in-manifests.md # how to
+        - Delay or schedule emails sending: ri/fast/articles/Delayed-Emails-Sending.md # how to
+    - <b>Release notes</b>: ri/fast/articles/Release-Notes.md
+    - <b>FAQs</b>: ri/fast/articles/Frequently-Asked-Questions.md
+  - <b>Engagement Package</b>:
+    - articles/about-sequences.md
+    - Get started:
+      # - How to open Revenue Grid:
+      - Initial config & first steps: articles/onboarding-tips.md
+      - Sample sequences:
+        - About: articles/the-sample-sequences.md
+        - Sample Sequences:
+          - 101 training: articles/sample-sequences7.md
+          - Cyclical loop starts with a call: articles/sample-sequences1.md
+          - Cyclical loop starts with a manual email: articles/sample-sequences2.md
+          - Mix of steps: articles/sample-sequences3.md
+          - Fully automated email drip campaign: articles/sample-sequences4.md
+          - Recruitment scenario: articles/sample-sequences5.md
+          - Renewal sequence: articles/sample-sequences6.md
+          - PR scenarios: articles/sample-sequences8.md
+          - Event follow up: articles/sample-sequences9.md
+    - Using sequences:
+      - Create a sequence:
+        - New sequence: articles/Create-new-sequence.md # split this article into smaller bits + move info about endorsed sequences here + priority
+        - Add steps: articles/Overview.md
+        - Add recipients: articles/Recipients.md
+        - Personalize with merge fields: articles/Using-Merge-Fields.md
+      - Manage sequence: articles/Sequences.md
+      - Run a sequence:
+        - Engagement with sequences: articles/Planner.md
+        - Sequence Settings: articles/Settings-of-Sequences.md
+        - Manage recipients:
+          - Audience tab basics: articles/People.md
+          - Action required: articles/Action-required.md
+          - Next steps: articles/Next-step.md
+          - Prospect statuses: articles/Prospect-Statuses.md
+          - Prospect profile: articles/prospect-profile.md
+          - Import from CSV: articles/import-recipients-from-csv.md
+          - Duplicate records: articles/handling-duplicate-records.md
+        - Sequence stages: articles/Sequences-Stages.md
+        - Statistics: articles/Analytics.md
+      - Templates: articles/Templates.md
+    - Sequences in Action Center:
+      - Replies: articles/Replies.md
+      - Notifications: articles/Notifications.md
+      - To-do items: articles/to-dos.md
+      - Tips: articles/bulk-in-planner.md
+    - Sequences in Sidebar: articles/Sidebar.md
+    - Team performance:
+      - Sequences productivity: articles/team-productivity.md
+      - Sequences Required Actions: articles/sequences-required-actions.md
+    - Personal settings (user):
+      - Personal settings: articles/Settings.md
+      - Daily digest: articles/sequence-daily-digest.md
+      - Assign delegates: articles/Delegation.md
+    # - How it works: # this section will contain theoretical info
+    - Admin guide:
+      - Setup:
+        - Engagement managed package: articles/engage-mp.md
+        - Widgets in Salesforce: articles/sfdc-widgets.md
+      - Access rights: articles/Access-rights.md
+      - Platform settings: articles/admin-settings.md
+      - SMS & calls:
+        # - Overview: articles/sms-calls.md # new, list of available providers, how to make a call, SMS, etc, widgets in SF + note that we can consider implementing integration for providers required by customers
+        - Twillio: articles/twilio.md
+        # - SMS360: articles/sms-360.md
+        # - Ring Central: articles/ring-central.md
+        - Aircall: articles/aircall-setup.md
+    - Trobleshooting:
+      - Missing <i>Add sequence</i> button: ri/fast/articles/missing-add-sequence-button.md
+      - Issues with RG Lead Sequences Widgets: ri/fast/articles/leads-widgets-troubleshooting.md
+    - <b>Release notes</b>: articles/release-notes-engagement.md
+    - <b>FAQs</b>: articles/FAQ.md
+  - <b>Intelligence Package</b>:
+    - articles/about-intelligence.md
+    - Get started:
+      - How to open Revenue Grid: articles/Setup.md
+      # - Initial config & first steps: articles/intelligence-first-steps.md
+    - Opportunities:
+      - Pipeline visibility: articles/Pipeline-visibility.md
+      - Opportunity insights: articles/Opportunity-details.md
+    - Accounts:
+      - Accounts dashboard: articles/Account-visibility.md
+      - Account insights: articles/Account-details.md
+      - Activity trends: articles/activity-trends.md
+      - Relationship Intelligence: articles/relationship-intelligence.md
+      - Engagement highlights: articles/engagement-highlights.md
+      - Related Signals: articles/related-signals.md
+    - Signals, action items & notes:
+      - Create a signal: articles/Signals.md
+      - Signals in Email Sidebar: ri/fast/articles/revenue-signals.md
+      # - Create an action item: articles/action-items.md
+      - Create a note: articles/notes.md
+    - Reporting & Forecasting:
+      - Pipeline Evolution: articles/Reports-tab.md
+      - Forecast Table: articles/forecast-table.md
+      - Forecast Chart: articles/forecast-chart.md
+      - Revenue Leaks Funnel: articles/revenue-leaks-funnel.md
+      # - How to adjust forecast: articles/adjust-forecast.md
+    - Team performance:
+      - Team performance: articles/team-coaching.md
+      # - Signals Report: articles/signals-report.md
+      - Sales rep accomplishments: articles/sales-rep-performance.md
+    # - How it works: # theoretical info
+    - Conversational intelligence: articles/Conversational-intelligence.md
+    - Admin guide:
+      - Intelligence Package rollout: articles/intelligence-package-rollout.md
+      - Salesforce prerequisites:
+        - Configure My Domain in Salesforce: ri/fast/articles/Dashboard-Prerequisites.md
+        - Turn on Collaborative Forecasts: articles/collaborative-forecasts.md
+        - Set Up Role Hierarchy in Salesforce: articles/role-hierarchy.md
+        - Assign a Forecast Manager: articles/assign-forecasting-manager-role.md
+        - Configure Forecast Categories and Opportunity Stages Mapping: articles/forecast-category-and-opportunity-stage.md
+        - Assign Quotas to Users: articles/assign-quotas.md
+      - Signals Configuration:
+        # - Signals Builder: articles/signals-builder.md # new
+        - Configurable Signals and Their Parameters: ri/fast/articles/signals-settings-and-parameters.md
+        - How to Assign a Signals Manager: articles/signals-manager.md
+        - Signals Assignees: articles/recipients-signals.md
+      - Access & visibility rights: articles/Access-rights.md
+      - Platform settings: articles/admin-settings.md
+      - Widgets in Salesforce: articles/sfdc-widgets.md
+    # - Trobleshooting:
+    - <b>Release notes</b>: articles/release-notes-intelligence.md
+    # - FAQs:
+  - <b>Release Notes</b>: articles/Release-Notes.md
+  - <b>Privacy & Security</b>: articles/Privacy-and-Security.md
+  - <b>Contact Us</b>: articles/contact-us.md
+
+markdown_extensions:
+    - smarty
+    - toc:
+        permalink: true
+        separator: "_"
+    - sane_lists
+    - tables
+    - meta
+    - fenced_code
+    - admonition
+    - footnotes
+    - fontawesome_markdown
+
+extra:
+    generator: false
+    product_name: RG Email Sidebar
+    short_name: RGES
+    company_name: Revenue Grid
+    short_company_name: RG
+    version: 3.0.3
+    copyright: 'Copyright &copy; Revenue Grid 2023'
+    social:
+    - icon: fontawesome/brands/creative-commons-share
+      link: 'https://revenuegrid.com/'
+    - icon: fontawesome/brands/facebook
+      link: 'https://www.facebook.com/RevenueGrid/'
+    - icon: fontawesome/brands/twitter
+      link: 'https://twitter.com/Revenue_Grid_'
+    - icon: fontawesome/brands/linkedin
+      link: 'https://linkedin.com/company/revenue-grid'
+
+extra_css:
+    - assets/css/extra-style.css
+
+extra_javascript:
+    - assets/js/add-scripts.js
+
+theme:
+  name: material
+  custom_dir: material
+  language: 'en'
+  logo: 'assets/images/RG-fav.png'
+  palette:
+    primary: 'white'
+    accent: 'teal'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  favicon: 'assets/images/RG-fav.png'
+  features:
+    - content.tabs.link
+    # - navigation.instant
+    # - navigation.tracking
+    - navigation.tabs
+    - navigation.footer
+    # - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - search.highlight
+    - search.suggest
+    - search.share
