@@ -1,4 +1,5 @@
 markdown
-langchain
+pyyaml
 numpy
 jupyter
+langchain
