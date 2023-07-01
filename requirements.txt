@@ -3,3 +3,4 @@ pyyaml
 numpy
 jupyter
 langchain
+tqdm

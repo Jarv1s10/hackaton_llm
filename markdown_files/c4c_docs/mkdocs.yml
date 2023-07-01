@@ -6,6 +6,7 @@ site_dir: ssi/docs/kb/
 site_url: https://revenuegrid.com/ssi/docs/kb/
 docs_dir: 'src'
 nav:
+    - SAP Cloud for Customer Server-Side Integration Knowledge Base: 'index.md'
     - 'Overview & Essentials':
         - What is the SSI Solution: 'articles/What-Is-C4C-SSI.md'
         - Privacy & Security: 'articles/Privacy-and-Security.md'
@@ -33,7 +34,7 @@ nav:
             - Autosaving of e-mails and events: 'articles/autosaving-pattern.md'
             - Linking related objects: 'articles/linking-related-objects.md'
             - Blocklisted e-mails and domains: 'articles/blocklist.md'
-#           - Saving attachements via SSI: 'articles/Attachments-Handling.md'
+            - Saving attachements via SSI: 'articles/Attachments-Handling.md'
             - Canceling and deleting Appointments and Visits: 'articles/canceling-deleting-calendar-items.md'
             - Calendar items sync filter and auto-sync feature: 'articles/calendar-items-sync-filter.md'
             - Linking meeting attendees with SAP records: 'articles/linking-meeting-attendees.md'
@@ -72,7 +73,7 @@ nav:
         - Add-In not loading in MS Outlook: 'articles/add-in-not-loading-in-outlook.md'
         - <i>"SSI for MS Outlook is not supported for this user"</i> error: 'articles/ssi-not-supported-for-this-user.md'
         - Add-In view problems in MS Outlook 2013: 'articles/add-in-view-problems-in-outlook-2013.md'
-        - SSI icon is greyed out in the ribbon: 'articles/icon-greyed-out.md' 
+        - SSI icon is greyed out in the ribbon: 'articles/icon-greyed-out.md'
         - <i>"Need Admin Approval"</i> error: 'articles/Need-Admin-Approval.md'
         - <i>"Forbidden"</i> error after Key User deletion: 'articles/forbidden-error-key-user-deletion.md'
         - <i>"Unable to validate the client identity token"</i> error: 'articles/identity-token-error.md'
@@ -94,7 +95,7 @@ markdown_extensions:
     - meta
     - fenced_code
     - admonition
-    - footnotes 
+    - footnotes
 
 extra:
     version: 1.2    #2304: new nav, logo, favicon; add backtotop feature

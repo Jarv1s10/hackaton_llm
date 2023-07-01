@@ -7,13 +7,13 @@ site_dir: helpcenter/
 site_url: https://docs.revenuegrid.com/
 docs_dir: 'src'
 nav:
+  - Salesforce integration Knowledge Base: index.md
   - <b>About</b>:
-    - index.md
     - Supported Salesforce editions: ri/fast/articles/Supported-Salesforce-Editions.md
     - Overcoming Firewall issues: articles/Overcoming-Firewall-Issues.md
     - Grant login access: ri/fast/articles/grant-account-login-access.md
+  - Productivity & Activity Capture: ri/fast/index.md
   - <b>Productivity & Activity Capture</b>:
-    - ri/fast/index.md
     - Overview:
       - Privacy and Security: ri/fast/articles/Privacy-and-Security.md # do we need a separate article?
       - Sync and Add-In functions: ri/fast/articles/AddIn-vs-Sync-Functions.md
@@ -171,21 +171,21 @@ nav:
       - Widgets in Salesforce:
         - Add widgets in Salesforce: ri/fast/articles/Dashboard-Salesforce.md
         - Setup individualized widgets: ri/fast/articles/Dashboard-Users-Only.md
-        # - Dashboard widgets configuration: ri/fast/articles/Dashboard-RevenueGrid.md # decided to delete -> links to it removed, removed from search -> create redirect?
+        - Dashboard widgets configuration: ri/fast/articles/Dashboard-RevenueGrid.md # decided to delete -> links to it removed, removed from search -> create redirect?
       - Delegated & shared access:
         - Delegated mailbox: ri/fast/articles/Delegated-Access-Emails.md
         - Delegated calendars: ri/fast/articles/Using-MS-Outlook-Delegated-Calendars.md
         - Using with Shared mailboxes: ri/fast/articles/Shared-Mailbox.md
         - Convert shared mailbox to regular one: ri/fast/articles/Shared-Regular.md # how to
       - Attachments handling and related settings: ri/fast/articles/Attachments-Handling-(Advanced).md
-      - Enable advanced calendaring: ri/fast/articles/Precondition-for-Enabling-Advanced-Calendar-Synchronization.md 
+      - Enable advanced calendaring: ri/fast/articles/Precondition-for-Enabling-Advanced-Calendar-Synchronization.md
       - Enable Calendar instant sync: ri/fast/articles/instant-sync.md
       - Sync rooms availability to Salesforce calendar: ri/fast/articles/sync-rooms-to-salesforce-calendar.md
       - Exchange integration via Apex class: ri/fast/articles/Exchange-Integration-Apex-Class.md
       - Revenue Grid Scheduler API endpoints: ri/fast/articles/Scheduler-API-Endpoints.md
       - Optional features list: ri/fast/articles/Optional-Features.md # maybe move
-      # - Setting Up Invisible Suite Managed Package in Salesforce: ri/fast/articles/Setting-Up-Invisible-Suite-Managed-Package-in-Salesforce.md # DEPRECATED w/ text; removed from search
-      # - Add the Attendees Management Component: ri/fast/articles/How-To-Add-the-Attendees-Management-Component.md # DEPRECATED w/out text; removed from search
+      - Setting Up Invisible Suite Managed Package in Salesforce: ri/fast/articles/Setting-Up-Invisible-Suite-Managed-Package-in-Salesforce.md # DEPRECATED w/ text; removed from search
+      - Add the Attendees Management Component: ri/fast/articles/How-To-Add-the-Attendees-Management-Component.md # DEPRECATED w/out text; removed from search
     - Troubleshooting:
       - Authorize RG Sync in Azure / Office 365 admin settings: ri/fast/articles/Server-Auth.md
       - Salesforce API calls limit: ri/fast/articles/Salesforce-API-Calls-Limit.md
@@ -281,10 +281,10 @@ nav:
       - Access rights: articles/Access-rights.md
       - Platform settings: articles/admin-settings.md
       - SMS & calls:
-        # - Overview: articles/sms-calls.md # new, list of available providers, how to make a call, SMS, etc, widgets in SF + note that we can consider implementing integration for providers required by customers
+        - Overview: articles/sms-calls.md # new, list of available providers, how to make a call, SMS, etc, widgets in SF + note that we can consider implementing integration for providers required by customers
         - Twillio: articles/twilio.md
-        # - SMS360: articles/sms-360.md
-        # - Ring Central: articles/ring-central.md
+        - SMS360: articles/sms-360.md
+        - Ring Central: articles/ring-central.md
         - Aircall: articles/aircall-setup.md
     - Trobleshooting:
       - Missing <i>Add sequence</i> button: ri/fast/articles/missing-add-sequence-button.md
@@ -295,7 +295,7 @@ nav:
     - articles/about-intelligence.md
     - Get started:
       - How to open Revenue Grid: articles/Setup.md
-      # - Initial config & first steps: articles/intelligence-first-steps.md
+      - Initial config & first steps: articles/intelligence-first-steps.md
     - Opportunities:
       - Pipeline visibility: articles/Pipeline-visibility.md
       - Opportunity insights: articles/Opportunity-details.md
@@ -309,17 +309,17 @@ nav:
     - Signals, action items & notes:
       - Create a signal: articles/Signals.md
       - Signals in Email Sidebar: ri/fast/articles/revenue-signals.md
-      # - Create an action item: articles/action-items.md
+      - Create an action item: articles/action-items.md
       - Create a note: articles/notes.md
     - Reporting & Forecasting:
       - Pipeline Evolution: articles/Reports-tab.md
       - Forecast Table: articles/forecast-table.md
       - Forecast Chart: articles/forecast-chart.md
       - Revenue Leaks Funnel: articles/revenue-leaks-funnel.md
-      # - How to adjust forecast: articles/adjust-forecast.md
+      - How to adjust forecast: articles/adjust-forecast.md
     - Team performance:
       - Team performance: articles/team-coaching.md
-      # - Signals Report: articles/signals-report.md
+      - Signals Report: articles/signals-report.md
       - Sales rep accomplishments: articles/sales-rep-performance.md
     # - How it works: # theoretical info
     - Conversational intelligence: articles/Conversational-intelligence.md
@@ -333,7 +333,7 @@ nav:
         - Configure Forecast Categories and Opportunity Stages Mapping: articles/forecast-category-and-opportunity-stage.md
         - Assign Quotas to Users: articles/assign-quotas.md
       - Signals Configuration:
-        # - Signals Builder: articles/signals-builder.md # new
+        - Signals Builder: articles/signals-builder.md # new
         - Configurable Signals and Their Parameters: ri/fast/articles/signals-settings-and-parameters.md
         - How to Assign a Signals Manager: articles/signals-manager.md
         - Signals Assignees: articles/recipients-signals.md
