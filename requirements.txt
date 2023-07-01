@@ -1,0 +1,4 @@
+markdown
+langchain
+numpy
+jupyter
