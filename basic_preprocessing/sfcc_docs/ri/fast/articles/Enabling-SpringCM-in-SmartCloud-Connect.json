@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/Enabling-SpringCM-in-SmartCloud-Connect.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Enabling-SpringCM-in-SmartCloud-Connect",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# How To Enable DocuSign Integration in the Sidebar\n\n<script>\ndocument.location.href=\"../Enabling-DocuSign-Integration-in-the-Sidebar/\";\n</script>",
+    "text_content": "search:\n exclude: true\nHow To Enable DocuSign Integration in the Sidebar\n \ndocument.location.href=\"../Enabling-DocuSign-Integration-in-the-Sidebar/\";"
+}

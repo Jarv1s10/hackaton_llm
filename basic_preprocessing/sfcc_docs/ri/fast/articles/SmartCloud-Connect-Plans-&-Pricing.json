@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/SmartCloud-Connect-Plans-&-Pricing.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/SmartCloud-Connect-Plans-&-Pricing",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# {{ product_name }} Subscription Plans & Pricing\n\n<script>\ndocument.location.href=\"../Subscription-Plans-&-Pricing/\";\n</script>",
+    "text_content": "search:\n exclude: true\n{{ product_name }} Subscription Plans & Pricing\n \ndocument.location.href=\"../Subscription-Plans-&-Pricing/\";"
+}

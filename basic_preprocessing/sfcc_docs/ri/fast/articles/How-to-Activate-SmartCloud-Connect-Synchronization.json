@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/How-to-Activate-SmartCloud-Connect-Synchronization.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/How-to-Activate-SmartCloud-Connect-Synchronization",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# Email Integration Full Deployment Scenarios\n\n<script>\ndocument.location.href=\"../Email-Integration-Full-Deployment-Scenarios/\";\n</script>",
+    "text_content": "search:\n exclude: true\nEmail Integration Full Deployment Scenarios\n \ndocument.location.href=\"../Email-Integration-Full-Deployment-Scenarios/\";"
+}

@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/Managing-SmartCloud-Connect-Add-In-Customizations.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Managing-SmartCloud-Connect-Add-In-Customizations",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# Managing Email Sidebar Customizations\n\n<script>\ndocument.location.href=\"../Managing-Email-Sidebar-Customizations/\";\n</script>",
+    "text_content": "search:\n exclude: true\nManaging Email Sidebar Customizations\n \ndocument.location.href=\"../Managing-Email-Sidebar-Customizations/\";"
+}

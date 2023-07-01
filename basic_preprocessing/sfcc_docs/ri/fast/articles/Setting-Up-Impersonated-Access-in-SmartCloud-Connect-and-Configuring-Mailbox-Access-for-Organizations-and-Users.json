@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/Setting-Up-Impersonated-Access-in-SmartCloud-Connect-and-Configuring-Mailbox-Access-for-Organizations-and-Users.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Setting-Up-Impersonated-Access-in-SmartCloud-Connect-and-Configuring-Mailbox-Access-for-Organizations-and-Users",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# How to Set Up Sync via Impersonation & Configure User Mailboxes\n\n<script>\ndocument.location.href=\"../Setting-Up-Impersonated-Access-and-Configuring-Mailbox-Access-for-Organizations-and-Users/\";\n</script>\n",
+    "text_content": "search:\n exclude: true\nHow to Set Up Sync via Impersonation & Configure User Mailboxes\n \ndocument.location.href=\"../Setting-Up-Impersonated-Access-and-Configuring-Mailbox-Access-for-Organizations-and-Users/\";"
+}

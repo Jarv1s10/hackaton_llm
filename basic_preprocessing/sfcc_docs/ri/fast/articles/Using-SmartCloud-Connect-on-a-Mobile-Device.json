@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/Using-SmartCloud-Connect-on-a-Mobile-Device.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Using-SmartCloud-Connect-on-a-Mobile-Device",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# Using {{ company_name }} Email Sidebar on Mobile Devices\n\n<script>\ndocument.location.href=\"../Using-on-iPhone/\";\n</script>",
+    "text_content": "search:\n exclude: true\nUsing {{ company_name }} Email Sidebar on Mobile Devices\n \ndocument.location.href=\"../Using-on-iPhone/\";"
+}

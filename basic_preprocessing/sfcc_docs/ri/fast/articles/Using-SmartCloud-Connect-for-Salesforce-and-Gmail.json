@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/Using-SmartCloud-Connect-for-Salesforce-and-Gmail.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Using-SmartCloud-Connect-for-Salesforce-and-Gmail",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# Using the Solution with Gmail and Google Workspace via the Chrome Extension\n\n<script>\ndocument.location.href=\"../Using-the-Solution-for-Salesforce-and-Gmail/\";\n</script>",
+    "text_content": "search:\n exclude: true\nUsing the Solution with Gmail and Google Workspace via the Chrome Extension\n \ndocument.location.href=\"../Using-the-Solution-for-Salesforce-and-Gmail/\";"
+}

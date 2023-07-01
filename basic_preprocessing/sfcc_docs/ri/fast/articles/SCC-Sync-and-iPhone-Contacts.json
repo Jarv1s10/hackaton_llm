@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/SCC-Sync-and-iPhone-Contacts.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/SCC-Sync-and-iPhone-Contacts",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# {{ company_name }} Sync and iPhone/iPad Contacts App Issue\n\n<script>\ndocument.location.href=\"../Sync-and-iPhone-Contacts-App-Issue/\";\n</script>",
+    "text_content": "search:\n exclude: true\n{{ company_name }} Sync and iPhone/iPad Contacts App Issue\n \ndocument.location.href=\"../Sync-and-iPhone-Contacts-App-Issue/\";"
+}

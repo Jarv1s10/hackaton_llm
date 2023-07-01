@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/SmartCloud-Connect-Mass-Deployment-in-Office-365.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/SmartCloud-Connect-Mass-Deployment-in-Office-365",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# Mass Deployment of the Add-In [Office 365]\n\n<script>\ndocument.location.href=\"../Mass-Deployment-of-the-Add-In-Office-365/\";\n</script>",
+    "text_content": "search:\n exclude: true\nMass Deployment of the Add-In [Office 365]\n \ndocument.location.href=\"../Mass-Deployment-of-the-Add-In-Office-365/\";"
+}

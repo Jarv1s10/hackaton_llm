@@ -1,0 +1,9 @@
+{
+    "site_name": "Revenue Grid Knowledge Base",
+    "short_site_name": "Sfcc",
+    "doc_dir": "ri/fast/articles/SmartCloud-Connect-and-Salesforce-API-Calls-Limit.md",
+    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/SmartCloud-Connect-and-Salesforce-API-Calls-Limit",
+    "title": null,
+    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# {{ product_name }} and Salesforce API Calls Limit\n\n<script>\ndocument.location.href=\"../Salesforce-API-Calls-Limit/\";\n</script>\n",
+    "text_content": "search:\n exclude: true\n{{ product_name }} and Salesforce API Calls Limit\n \ndocument.location.href=\"../Salesforce-API-Calls-Limit/\";"
+}
