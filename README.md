@@ -29,7 +29,7 @@
 ### Chatbot logic:
 - [ ] Choose an open-source LLM
 - [ ] Choose apps for integration (Slack / Teams / WhatsApp / ...)
-- [ ] Think about the logic of dialogue (how to save history for the following messages)
+- [ ] Think about the logic of dialogue (how to save history for the following messages / proposed starting messages)
 - [ ] Think about the user's restrictions (number of messages, allowable topics, starting prompt for LLM)
 - [ ] Think about auto-messages for the start of a conversation
 - [ ] Think about additional data in answers (links to original articles, images/gifs with instructions)
