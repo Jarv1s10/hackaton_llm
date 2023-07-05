@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/How-to-Install-SmartCloud-Connect-from-a-Manifest-File-or-URL.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/How-to-Install-SmartCloud-Connect-from-a-Manifest-File-or-URL",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# How to Install the Add-In from an XML Manifest File or URL\n\n<script>\ndocument.location.href=\"../How-to-Install-the-Add-In-from-an-XML-Manifest-File-or-URL/\";\n</script>",
-    "text_content": "search:\n exclude: true\nHow to Install the Add-In from an XML Manifest File or URL\n \ndocument.location.href=\"../How-to-Install-the-Add-In-from-an-XML-Manifest-File-or-URL/\";"
-}

@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/Onboarding-Tasks.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Onboarding-Tasks",
-    "title": null,
-    "full_content": "---\nhide_feedback_form: 1\ndescription: Collection of articles about keeping your Tasks and Contacts synced with Salesforce\n---\n# Keep your Tasks and Contacts synced with Salesforce  \n\n\n<!-- ShareThis BEGIN --> \n<div class=\"addthis_inline_share_toolbox\"></div>\n<!-- End ShareThis --> \n\n&nbsp;\n\n- [How to manage tasks along with reminders](../Synchronization-of-Tasks/)\n\n- [How to manage contacts](../Synchronization-of-Contacts/)\n\n- [How to manage your task activities](../Working-with-Activities/)\n\n- [How to make quick memos](../Record-Description-and-Add-Quick-Memo/)\n\n- [How to use Activities Filter](../Working-with-Activities/#activities_filter)\n\n- [Learn how contacts fields are matched between your mail client and Salesforce](../Object-Fields-Mapping-Patterns/#ms_outlook_contacts)\n\n- [Tasks syncing limitations via MS Graph connection](../Synchronization-of-Tasks/#tasks_syncing_limitations_via_ms_graph)\n\n  \n\n&nbsp;\n\n&#160;\n &#160;",
-    "text_content": "hide_feedback_form: 1\ndescription: Collection of articles about keeping your Tasks and Contacts synced with Salesforce\nKeep your Tasks and Contacts synced with Salesforce\n \n \n \nHow to manage tasks along with reminders\nHow to manage contacts\nHow to manage your task activities\nHow to make quick memos\nHow to use Activities Filter\nLearn how contacts fields are matched between your mail client and Salesforce\nTasks syncing limitations via MS Graph connection\n&#160;\n &#160;"
-}

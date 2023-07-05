@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/How-to-Run-SmartCloud-Connect-on-Citrix-XenApp.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/How-to-Run-SmartCloud-Connect-on-Citrix-XenApp",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# How to Run and Troubleshoot the Solution on Citrix XenApp\n\n<script>\ndocument.location.href=\"../How-to-Run-and-Troubleshoot-the-Solution-on-Citrix-XenApp/\";\n</script>",
-    "text_content": "search:\n exclude: true\nHow to Run and Troubleshoot the Solution on Citrix XenApp\n \ndocument.location.href=\"../How-to-Run-and-Troubleshoot-the-Solution-on-Citrix-XenApp/\";"
-}

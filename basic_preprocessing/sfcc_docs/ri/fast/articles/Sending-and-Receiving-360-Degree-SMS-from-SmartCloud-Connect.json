@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/Sending-and-Receiving-360-Degree-SMS-from-SmartCloud-Connect.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Sending-and-Receiving-360-Degree-SMS-from-SmartCloud-Connect",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# Sending and Receiving 360 Degree SMS from the Sidebar\n\n<script>\ndocument.location.href=\"../Sending-and-Receiving-360-Degree-SMS-from-the-Sidebar/\";\n</script>\n",
-    "text_content": "search:\n exclude: true\nSending and Receiving 360 Degree SMS from the Sidebar\n \ndocument.location.href=\"../Sending-and-Receiving-360-Degree-SMS-from-the-Sidebar/\";"
-}

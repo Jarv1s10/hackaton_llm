@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/Troubleshooting.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Troubleshooting",
-    "title": null,
-    "full_content": "---\ndescription: Collection of articles on troubleshooting issues\n---\n   [       \u274d   Resolving Firewall Issues     ](../Overcoming-Firewall-Issues/)  \n\n&nbsp;\n   [       \u274d   Clearing MS Edge Cache & Cookies to Refresh {{ company_name }}     ](../Clearing-Browser-Cache-and-Cookies-to-Refresh-the-Add-In/)  \n\n\n&nbsp;\n   [       \u274d   How to Resolve the Add-In Could Not Be Started Error     ](../Troubleshooting-Add-In-Could-Not-Be-Started/)  \n\n&nbsp;\n   [       \u274d   How to Resolve {{ short_company_name }} Icons Are Greyed Out in the Ribbon     ](../Icon-Greyed-Out/)  \n\n&nbsp;\n  [       \u274d   How to Resolve {{ short_company_name }} Icons Are Replaced by Placeholder Icons in the Ribbon     ](../Troubleshooting-Placeholder-Icon-Displayed/)  \n\n&nbsp;\n   [       \u274d   {{ company_name }} and Salesforce API Calls Limit     ](../Salesforce-API-Calls-Limit/)  \n\n&nbsp;\n\n   [       \u274d   Sync Issues Error Codes     ](../Sync-Issues-Troubleshooter/)  \n\n&nbsp;\n\n&#160;\n &#160;",
-    "text_content": "description: Collection of articles on troubleshooting issues\n \u274d Resolving Firewall Issues \n \u274d Clearing MS Edge Cache & Cookies to Refresh {{ company_name }} \n \u274d How to Resolve the Add-In Could Not Be Started Error \n \u274d How to Resolve {{ short_company_name }} Icons Are Greyed Out in the Ribbon \n \u274d How to Resolve {{ short_company_name }} Icons Are Replaced by Placeholder Icons in the Ribbon \n \u274d {{ company_name }} and Salesforce API Calls Limit \n \u274d Sync Issues Error Codes \n&#160;\n &#160;"
-}

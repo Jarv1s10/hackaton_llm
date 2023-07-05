@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/How-to-Use-SCC-Engagement-Panel-(Adaptive-view).md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/How-to-Use-SCC-Engagement-Panel-(Adaptive-view)",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# How to Use the Solution's Engagement Panel\n\n<script>\ndocument.location.href=\"../How-to-Use-the-Solution-s-Engagement-Panel/\";\n</script>",
-    "text_content": "search:\n exclude: true\nHow to Use the Solution's Engagement Panel\n \ndocument.location.href=\"../How-to-Use-the-Solution-s-Engagement-Panel/\";"
-}

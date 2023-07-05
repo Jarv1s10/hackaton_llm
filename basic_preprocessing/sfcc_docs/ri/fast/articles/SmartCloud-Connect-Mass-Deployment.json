@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/SmartCloud-Connect-Mass-Deployment.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/SmartCloud-Connect-Mass-Deployment",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# {{ company_name }} Email Sidebar Mass Deployment  \n\n\n**The article was moved to [this location](../Mass-Deployment-of-the-Add-In-Office-365/)**\n\n<script>\ndocument.location.href=\"../Mass-Deployment-of-the-Add-In-Office-365/\";\n</script>",
-    "text_content": "search:\n exclude: true\n{{ company_name }} Email Sidebar Mass Deployment\nThe article was moved to this location\n \ndocument.location.href=\"../Mass-Deployment-of-the-Add-In-Office-365/\";"
-}

@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/Onboarding.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Onboarding",
-    "title": null,
-    "full_content": "---\nhide_feedback_form: 1\ndescription: collection of onboarding articles\n---\n \u200b   [       \u274d   Salesforce Interactions     ](../Onboarding-Interactions/)  \n\n&nbsp;\n \u200b   [       \u274d   Saving Emails     ](../Onboarding-Emails/)  \n\n&nbsp;\n \u200b   [       \u274d   Syncing Calendar Items     ](../Onboarding-Calendars/)  \n\n&nbsp;\n \u200b   [       \u274d   Syncing Tasks & Contacts     ](../Onboarding-Tasks/)  \n\n&nbsp;\n\n&#160;\n &#160;",
-    "text_content": "hide_feedback_form: 1\ndescription: collection of onboarding articles\n\u200b \u274d Salesforce Interactions \n \u200b \u274d Saving Emails \n \u200b \u274d Syncing Calendar Items \n \u200b \u274d Syncing Tasks & Contacts \n&#160;\n &#160;"
-}

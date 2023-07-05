@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "articles/Account-details.md",
-    "doc_url": "https://docs.revenuegrid.com/articles/Account-details",
-    "title": null,
-    "full_content": "---\ntitle: Account insights\ndescription: Learn how to make the best use of the insights on the Account details page\n---\n\n  \n# Comprehensive Account insights for the best decisions\n\n<p style=\"font-size:15px\"><i>2 min read - updated few hours ago</i> </p>\n<!-- ShareThis BEGIN -->\n<div class=\"addthis_inline_share_toolbox\"></div>\n<!-- End ShareThis -->\n<br>\n\nOn this tab you can find a comprehensive set of data points that help you to dig into communication details and progress. All data on the tab is 100% live data gathered and processed from emails, calendars and Salesforce. On this all-inclusive pad, you get:\n\n<p> <img src=\"../../assets/images/01122022/acc-full.gif\" style=\"margin-left:15px;  float: right; width: 70%; height: 70%;\">\n\n<a href=\"../activity-trends/\">Emails and Meetings</a>\n<br><br>\n<a href=\"../relationship-intelligence/\">Relationship Intelligence</a>\n<br><br>\n<a href=\"../engagement-highlights/\">Engagement highlights</a>\n<br><br>\n<a href=\"../related-signals/\">Related Signals</a>\n</p>\n<br><br><br><br><br><br><br>\n\n\n\n\n\n\n\n\n\n\n",
-    "text_content": "title: Account insights\ndescription: Learn how to make the best use of the insights on the Account details page\nComprehensive Account insights for the best decisions\n 2 min read - updated few hours ago \n \n \n \n \nOn this tab you can find a comprehensive set of data points that help you to dig into communication details and progress. All data on the tab is 100% live data gathered and processed from emails, calendars and Salesforce. On this all-inclusive pad, you get:\n \n Emails and Meetings \n \n Relationship Intelligence \n \n Engagement highlights \n \n Related Signals \n "
-}

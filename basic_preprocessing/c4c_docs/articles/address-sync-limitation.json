@@ -1,9 +1,0 @@
-{
-    "site_name": "SAP Cloud for Customer Server-Side Integration (SSI)",
-    "short_site_name": "C4C",
-    "doc_dir": "articles/address-sync-limitation.md",
-    "doc_url": "https://revenuegrid.com/ssi/docs/kb/articles/address-sync-limitation",
-    "title": null,
-    "full_content": "# Contact Address Synchronization Limitation\n\n&nbsp;\n\n&nbsp;\n\n**[ This article is work-in-progress ]**\n\n&nbsp;\n\n&nbsp;\n\nSAP Cloud for Customer and MS Outlook have significant design discrepancies in the Contact Address fields area. SAP Cloud for Customer keeps *House Number* and *Street* as 2 separate fields, while MS Outlook keeps both values in a single one.\n\nThis inconsistency may lead to House Number and Street fields merging in SAP Cloud for Customer after sync, in case of the Contact update in MS Outlook.\n\n&nbsp;\n\n**Solution**\n\nThis is a known limitation of the products. The option to prevent fields merging is to keep SAP Accounts and (or) Contacts **read-only** in MS Outlook. This is a standard option in the SSI Sync settings configuration.\n\n&nbsp;\n\n&nbsp;",
-    "text_content": "Contact Address Synchronization Limitation\n[ This article is work-in-progress ]\nSAP Cloud for Customer and MS Outlook have significant design discrepancies in the Contact Address fields area. SAP Cloud for Customer keeps House Number and Street as 2 separate fields, while MS Outlook keeps both values in a single one.\nThis inconsistency may lead to House Number and Street fields merging in SAP Cloud for Customer after sync, in case of the Contact update in MS Outlook.\nSolution\nThis is a known limitation of the products. The option to prevent fields merging is to keep SAP Accounts and (or) Contacts read-only in MS Outlook. This is a standard option in the SSI Sync settings configuration."
-}

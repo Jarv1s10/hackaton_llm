@@ -1,6 +1,11 @@
+jupyter
 markdown
 pyyaml
-numpy
-jupyter
-langchain
 tqdm
+numpy
+pandas
+langchain
+tiktoken
+plotly
+seaborn
+weaviate-client

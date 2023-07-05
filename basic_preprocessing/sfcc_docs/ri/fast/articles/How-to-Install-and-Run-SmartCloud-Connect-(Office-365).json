@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/How-to-Install-and-Run-SmartCloud-Connect-(Office-365).md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/How-to-Install-and-Run-SmartCloud-Connect-(Office-365)",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# How to Install and Run the Solution for Office 365 Mailboxes\n\n<script>\ndocument.location.href=\"../How-to-Install-and-Run-the-Solution-for-Office-365-Mailboxes/\";\n</script>",
-    "text_content": "search:\n exclude: true\nHow to Install and Run the Solution for Office 365 Mailboxes\n \ndocument.location.href=\"../How-to-Install-and-Run-the-Solution-for-Office-365-Mailboxes/\";"
-}

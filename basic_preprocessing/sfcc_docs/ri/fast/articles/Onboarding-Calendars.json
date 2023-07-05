@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/Onboarding-Calendars.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/Onboarding-Calendars",
-    "title": null,
-    "full_content": "---\nhide_feedback_form: 1\ndescription: The list of articles about calendar items handling\n---\n# Synchronize Your Calendar Items  \n\n\n<!-- ShareThis BEGIN --> \n<div class=\"addthis_inline_share_toolbox\"></div>\n<!-- End ShareThis --> \n\n&nbsp;\n\n- [How to save calendar items automatically](../Saving-Calendar-Items-in-Salesforce-(Adaptive-view)/#meeting_appointment_autosaving)\n- [How to save calendar items selectively](../Saving-Calendar-Items-in-Salesforce-(Adaptive-view)/#saving_calendar_items_semi-automatically)\n- [How to save files attached to calendar items](../Attachments-Handling-(Basic)/#saving_files_attached_to_calendar_items)\n- [How to auto-create Leads or Contacts for attendees not registered in Salesforce](../Synchronization-Engine-An-Overview/#automatic_creation_of_contacts_or_leads_by_rg_email_sidebar_autoresolving)\n- [How to sync series of recurring meetings](../Saving-Calendar-Items-in-Salesforce-(Adaptive-view)/#synchronizing_series_of_recurring_items)\n- [Learn more about specific synchronization patterns](../Calendar-Items-Sync-Special-Patterns-Attendees-Lists,-Private-Items,-Item-Unsharing-and-Deletion/#private_calendar_items)\n\n\n\n&#160;\n &#160;",
-    "text_content": "hide_feedback_form: 1\ndescription: The list of articles about calendar items handling\nSynchronize Your Calendar Items\n \n \n \nHow to save calendar items automatically\nHow to save calendar items selectively\nHow to save files attached to calendar items\nHow to auto-create Leads or Contacts for attendees not registered in Salesforce\nHow to sync series of recurring meetings\nLearn more about specific synchronization patterns\n&#160;\n &#160;"
-}

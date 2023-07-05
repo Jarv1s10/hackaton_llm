@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/SmartCloud-Connect-Synchronization-An-Overview.md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/SmartCloud-Connect-Synchronization-An-Overview",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# {{ company_name }} Synchronization Engine: An Overview\n\n<script>\ndocument.location.href=\"../Synchronization-Engine-An-Overview/\";\n</script>",
-    "text_content": "search:\n exclude: true\n{{ company_name }} Synchronization Engine: An Overview\n \ndocument.location.href=\"../Synchronization-Engine-An-Overview/\";"
-}

@@ -1,9 +1,0 @@
-{
-    "site_name": "Revenue Grid Knowledge Base",
-    "short_site_name": "Sfcc",
-    "doc_dir": "ri/fast/articles/SmartCloud-Connect-Return-on-Investment-(ROI).md",
-    "doc_url": "https://docs.revenuegrid.com/ri/fast/articles/SmartCloud-Connect-Return-on-Investment-(ROI)",
-    "title": null,
-    "full_content": "---\nsearch:\n  exclude: true\n---\n\n# {{ product_name }} Return on Investment (ROI), Usage Efficiency, and User Setup Status Tools\n\n<script>\ndocument.location.href=\"../Return-on-Investment-ROI-Usage-Efficiency-and-User-Setup-Status-Tools/\";\n</script>",
-    "text_content": "search:\n exclude: true\n{{ product_name }} Return on Investment (ROI), Usage Efficiency, and User Setup Status Tools\n \ndocument.location.href=\"../Return-on-Investment-ROI-Usage-Efficiency-and-User-Setup-Status-Tools/\";"
-}

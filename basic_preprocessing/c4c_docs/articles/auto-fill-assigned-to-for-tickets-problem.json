@@ -1,9 +1,0 @@
-{
-    "site_name": "SAP Cloud for Customer Server-Side Integration (SSI)",
-    "short_site_name": "C4C",
-    "doc_dir": "articles/auto-fill-assigned-to-for-tickets-problem.md",
-    "doc_url": "https://revenuegrid.com/ssi/docs/kb/articles/auto-fill-assigned-to-for-tickets-problem",
-    "title": null,
-    "full_content": "# Auto-fill \"Assigned To\" for Tickets Feature not Working\n\n&nbsp;\n\n&nbsp;\n\n**[ This article is work-in-progress ]**\n\n&nbsp;\n\n&nbsp;\n\n## Symptoms\n\nThe user enabled **Auto-fill \"Assigned To\" for Tickets** option on the User Profile Customization page in Groupware Settings:\n\n<p>\n<img src= \"..\\..\\assets\\images\\auto-fill-assigned-to-problem\\3.png\">\n</p>\n\nHowever, **Assigned To** field remains empty in SAP Cloud for Customer.\n\n&nbsp;\n\n* * *\n\n&nbsp;\n\n## Causes\n\nThe feature **Auto-fill \"Assigned To\" for Tickets** wasn't configured properly.\n\n&nbsp;\n\n* * *\n\n&nbsp;\n\n## Resolution\n\nTo resolve the problem, make sure that the field **Assigned To (Reference)** is available for the Ticket object in the \u0421ustomization and that the **Display on Create** option is selected:\n\n<p>\n<img src= \"..\\..\\assets\\images\\auto-fill-assigned-to-problem\\4.png\">\n</p>\n\n&nbsp;\n\n&nbsp;",
-    "text_content": "Auto-fill \"Assigned To\" for Tickets Feature not Working\n[ This article is work-in-progress ]\nSymptoms\nThe user enabled Auto-fill \"Assigned To\" for Tickets option on the User Profile Customization page in Groupware Settings:\n \n \n \nHowever, Assigned To field remains empty in SAP Cloud for Customer.\nCauses\nThe feature Auto-fill \"Assigned To\" for Tickets wasn't configured properly.\nResolution\nTo resolve the problem, make sure that the field Assigned To (Reference) is available for the Ticket object in the \u0421ustomization and that the Display on Create option is selected:\n \n \n "
-}

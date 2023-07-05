@@ -1,9 +1,0 @@
-{
-    "site_name": "SAP Cloud for Customer Server-Side Integration (SSI)",
-    "short_site_name": "C4C",
-    "doc_dir": "articles/Sync-Activation.md",
-    "doc_url": "https://revenuegrid.com/ssi/docs/kb/articles/Sync-Activation",
-    "title": null,
-    "full_content": "# How to Set Up or Renew SSI Sync Engine Access to E-Mail Data\n\n&nbsp;\n\n**[The article is work-in-progress]**\n\n&nbsp;\n\n### For Exchange mailboxes  \n\n![](../assets/images/Profiles/change_creds.png)\n\n&nbsp;\n\n![](../assets/images/Profiles/email_config.png)\n\n&nbsp;\n\n&nbsp;\n\n### For Office 365 mailboxes\n\nOffice 365 data access is established over [standard O365 OAuth 2.0 authorization](https://docs.microsoft.com/en-us/azure/active-directory/develop/active-directory-v2-protocols). To set up or renew O365 data connection, click the button **Refresh** and then log in to your e-mail account via the OAuth dialog opened in your web browser.\n\n",
-    "text_content": "How to Set Up or Renew SSI Sync Engine Access to E-Mail Data\n[The article is work-in-progress]\nFor Exchange mailboxes\nFor Office 365 mailboxes\nOffice 365 data access is established over standard O365 OAuth 2.0 authorization. To set up or renew O365 data connection, click the button Refresh and then log in to your e-mail account via the OAuth dialog opened in your web browser."
-}
