@@ -35,4 +35,4 @@
 - [ ] Think about additional data in answers (links to original articles, images/gifs with instructions)
 - [ ] Deploy the bot
 - [ ] Test chatbot on basic questions about RevenueGrid
-      
+

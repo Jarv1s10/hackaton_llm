@@ -1,14 +1,20 @@
-from genericpath import isfile
 import os
 import re
 import json
 import requests
+import getpass
 
 import yaml
-from bs4 import BeautifulSoup, PageElement
+from bs4 import BeautifulSoup
 from markdown import Markdown
-import langchain as lc
 import tiktoken
+import weaviate
+
+from langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
+from langchain.schema import Document
+from langchain.embeddings import OpenAIEmbeddings
+from langchain.vectorstores import Weaviate
+
 
 def delete_html_tags_regex(text):
     tag_regex = re.compile(r'<.*?>')
@@ -42,10 +48,11 @@ def get_splitter_len_func(tokenizer: tiktoken.Encoding):
     return lambda text: token_length(get_clean_text_from_html(text), tokenizer)
 
 def create_splitter(chunk_size, len_func):
-    return lc.text_splitter.RecursiveCharacterTextSplitter(["<h1", "<h2", "<h3", "<h4", "<h5", "<h6"],
-                                                            chunk_size=chunk_size, chunk_overlap=0, length_function=len_func, keep_separator=True)
+    return RecursiveCharacterTextSplitter(["<h1", "<h2", "<h3", "<h4", "<h5", "<h6"],
+                                          chunk_size=chunk_size, chunk_overlap=0,
+                                          length_function=len_func, keep_separator=True)
 
-def split_doc_by_subsections(html_text: str, splitter):
+def split_html_by_subsections(html_text: str, splitter: TextSplitter):
     splits = splitter._merge_splits(splitter.split_text(html_text), '\n')
     return list(map(get_clean_text_from_html, splits))
 
@@ -105,7 +112,7 @@ def get_sections_documents():
             short_site_name = 'C4C' if 'c4c' in base_docs else 'Sfcc'
 
             doc_html_text = doc_soup.prettify()
-            sections_content = split_doc_by_subsections(doc_html_text, splitter)
+            sections_content = split_html_by_subsections(doc_html_text, splitter)
             for sec_content in sections_content:
                 sec_metadata = {
                     'doc_title': doc_title,
@@ -130,3 +137,16 @@ if __name__ == '__main__':
         sections_docs = get_sections_documents()
         with open(docs_path, 'w') as f:
             json.dump(sections_docs, f, indent=4)
+
+    docs = [Document(**d) for d in docs]
+
+
+    os.environ['OPENAI_API_KEY'] = getpass.getpass("OpenAI API Key:")
+    WEAVIATE_API_KEY = getpass.getpass("Weaviate API Key:")
+    WEAVIATE_URL = getpass.getpass("Weaviate URL:")
+
+    client = weaviate.Client(url=WEAVIATE_URL,
+                             auth_client_secret=weaviate.AuthApiKey(api_key=WEAVIATE_API_KEY))
+
+    embeddings = OpenAIEmbeddings()
+    db = Weaviate.from_documents(docs, embeddings, client=client, index_name='RGDocs', by_text=False)

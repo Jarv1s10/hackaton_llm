@@ -9,3 +9,5 @@ tiktoken
 plotly
 seaborn
 weaviate-client
+openai
+aiogram
