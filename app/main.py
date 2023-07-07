@@ -71,7 +71,7 @@ class DummyLLM(BaseLLM):
 
 # LLM = DummyLLM()
 LLM = OpenAI(model_name="text-davinci-003", openai_api_key=OPENAI_API_KEY, max_tokens=2000)
-LLM_TOKEN_LIMIT = 4_000
+LLM_TOKEN_LIMIT = LLM.max_context_size
 SYSTEM_MESSAGE = \
 """
 System message:
