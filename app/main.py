@@ -69,12 +69,15 @@ class DummyLLM(BaseLLM):
     def _llm_type(self) -> str:
         return "Return type of llm."
 
-LLM = DummyLLM()
-# LLM = OpenAI(model_name="text-davinci-003", openai_api_key=OPENAI_API_KEY, max_tokens=2000)
+# LLM = DummyLLM()
+LLM = OpenAI(model_name="text-davinci-003", openai_api_key=OPENAI_API_KEY, max_tokens=2000)
 LLM_TOKEN_LIMIT = 4_000
 SYSTEM_MESSAGE = \
-"""You are an AI assistant for the Revenue Grid documentation.
+"""
+System message:
+You are an AI assistant for the Revenue Grid documentation.
 You are given a question and extracted parts of product documentation. Provide a conversational answer to the question using the pieces of information provided.
+Your answers should be formatted in Markdown.
 If you don't know the answer, just say "Hmm, I'm not sure." Don't try to make up an answer.
 If the question is not about Revenue Grid, politely inform them that you are tuned to only answer questions about Revenue Grid.
 """
@@ -130,8 +133,7 @@ async def text_message_handler(message: types.Message):
         return
 
     query = message.text
-    history = session.memory.load_memory_variables({})['history'] + '\n' + f'Human: {query}'
-    relevant_docs = db.similarity_search(history, by_text=False)
+    relevant_docs = db.similarity_search(query, by_text=False)
 
     while sum([LLM.get_num_tokens(doc.page_content) for doc in relevant_docs]) > LLM_TOKEN_LIMIT // 2:
         relevant_docs = relevant_docs[:-1]
@@ -139,16 +141,24 @@ async def text_message_handler(message: types.Message):
     summaries = [doc.page_content for doc in relevant_docs]
     summaries = '\n'.join(summaries)
 
-    sources = 'Sources:\n' + '\n'.join([f"[{doc.metadata['doc_title']}]({doc.metadata['doc_url']})" for doc in relevant_docs])
+    sources = set(f"[{doc.metadata['doc_title']}]({doc.metadata['doc_url']})" for doc in relevant_docs)
+    sources = 'Documentation sources:\n' + '\n'.join(sources)
 
-    prompt_to_llm = SYSTEM_MESSAGE + history + 'Summaries:\n' + summaries
+    history = session.memory.load_memory_variables({})['history']
+    prompt_to_llm = SYSTEM_MESSAGE + history + '\n' + f'Human: {query}' + f'Summaries:\n{summaries}'
+
+    bot_message = await message.reply('Thinking...', parse_mode='Markdown')
+
     llm_answer = LLM.predict(prompt_to_llm)
-    display_answer = llm_answer + '\n--------------\n' + sources
+    if llm_answer.startswith('Answer:'):
+        llm_answer = llm_answer[7:].strip()
+
+    display_answer = llm_answer + '\n------------------------------------------\n' + sources
 
     session.memory.save_context({'input': query}, {'output': llm_answer})
     dp.bot.data.update({"session": session})
 
-    await message.reply(display_answer, parse_mode='Markdown')
+    await bot_message.edit_text(display_answer, parse_mode='Markdown')
 
 # Start the bot
 if __name__ == '__main__':
