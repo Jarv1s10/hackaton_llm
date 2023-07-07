@@ -76,7 +76,7 @@ SYSTEM_MESSAGE = \
 """
 System message:
 You are an AI assistant for the Revenue Grid documentation.
-You are given a question and extracted parts of product documentation. Provide a conversational answer to the question using the pieces of information provided.
+Provide a conversational answer to the question under "Human:" section, using the pieces of information provided under "Summaries" section.
 Your answers should be formatted in Markdown.
 If you don't know the answer, just say "Hmm, I'm not sure." Don't try to make up an answer.
 If the question is not about Revenue Grid, politely inform them that you are tuned to only answer questions about Revenue Grid.
@@ -103,8 +103,7 @@ async def start_handler(message: types.Message):
     memory = ConversationTokenBufferMemory(llm=LLM, max_token_limit=LLM_TOKEN_LIMIT // 2)
     session = UserSession(user_id, memory)
     dp.bot.data.update({"session": session})
-
-    await dp.bot.send_message(chat_id=message.chat.id, text="Hey! This bot was created to answer all your questions about RevenueGrid! Let's get started. Ask me something:")
+    await message.reply("Hey! This bot was created to answer all your questions about RevenueGrid! Let's get started. Ask me something:")
 
 @dp.message_handler(commands=['help'])
 async def start_handler(message: types.Message):
@@ -135,7 +134,7 @@ async def text_message_handler(message: types.Message):
     query = message.text
     relevant_docs = db.similarity_search(query, by_text=False)
 
-    while sum([LLM.get_num_tokens(doc.page_content) for doc in relevant_docs]) > LLM_TOKEN_LIMIT // 2:
+    while len(relevant_docs) > 1 and sum([LLM.get_num_tokens(doc.page_content) for doc in relevant_docs]) > LLM_TOKEN_LIMIT // 2:
         relevant_docs = relevant_docs[:-1]
 
     summaries = [doc.page_content for doc in relevant_docs]
@@ -145,7 +144,7 @@ async def text_message_handler(message: types.Message):
     sources = 'Documentation sources:\n' + '\n'.join(sources)
 
     history = session.memory.load_memory_variables({})['history']
-    prompt_to_llm = SYSTEM_MESSAGE + history + '\n' + f'Human: {query}' + f'Summaries:\n{summaries}'
+    prompt_to_llm = '\n'.join([SYSTEM_MESSAGE, history, f'Human: {query}', f'Summaries:\n{summaries}', 'AI: '])
 
     bot_message = await message.reply('Thinking...', parse_mode='Markdown')
 
