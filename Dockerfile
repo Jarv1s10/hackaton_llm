@@ -6,3 +6,5 @@ RUN pip install -r /code/requirements.txt
 ADD .env /code/.env
 ADD ./app/ /code
 WORKDIR /code
+
+CMD python ./app/main.py

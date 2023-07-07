@@ -14,7 +14,7 @@ from langchain.text_splitter import RecursiveCharacterTextSplitter, TextSplitter
 from langchain.schema import Document
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Weaviate
-from langchain.llms import OpenAI, BaseLLM
+from langchain.llms import OpenAI, BaseLLM, LlamaCpp
 from langchain.chains import RetrievalQAWithSourcesChain
 from langchain.prompts import PromptTemplate
 from langchain.memory import ConversationTokenBufferMemory, ConversationSummaryBufferMemory
@@ -36,10 +36,7 @@ client = weaviate.Client(
 
 embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
 
-db = Weaviate(client, 'RGDocs', 'text', embeddings, by_text=False)
-db._query_attrs = [p['name'] for p in client.schema.get('RGDocs')['properties']]
-
-# llm = OpenAI(openai_api_key=OPENAI_API_KEY)
+db = Weaviate(client, 'RGDocs', 'text', embeddings, by_text=False, attributes=['doc_title', 'doc_url'])
 
 class DummyLLM(BaseLLM):
     _tokenizer = tiktoken.encoding_for_model('gpt-3.5-turbo')
@@ -73,11 +70,11 @@ class DummyLLM(BaseLLM):
         return "Return type of llm."
 
 LLM = DummyLLM()
+# LLM = OpenAI(model_name="text-davinci-003", openai_api_key=OPENAI_API_KEY, max_tokens=2000)
 LLM_TOKEN_LIMIT = 4_000
 SYSTEM_MESSAGE = \
 """You are an AI assistant for the Revenue Grid documentation.
 You are given a question and extracted parts of product documentation. Provide a conversational answer to the question using the pieces of information provided.
-If the question includes a request for code, provide a code block directly from the documentation.
 If you don't know the answer, just say "Hmm, I'm not sure." Don't try to make up an answer.
 If the question is not about Revenue Grid, politely inform them that you are tuned to only answer questions about Revenue Grid.
 """
