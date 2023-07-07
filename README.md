@@ -2,15 +2,6 @@
 
 ### Useful links:
 * Documentation: https://docs.revenuegrid.com
-* Database connection:
-  ```
-  import weaviate
-
-  client = weaviate.Client(
-    url="https://hackaton-cluster-lnypogrq.weaviate.network",
-    auth_client_secret=weaviate.AuthApiKey(api_key="Oa46IoB9HwXqOssR8IpwsWgiSFyrjm8IWuZu"),
-  )
-  ```
 
 ### Preprocessing tasks:
 
