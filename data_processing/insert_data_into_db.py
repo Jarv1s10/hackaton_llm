@@ -10,7 +10,7 @@ from langchain.schema import Document
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Weaviate
 
-from process_doc_page import process_doc_page
+from app.api.process_doc_page import process_doc_page
 
 def delete_html_tags_regex(text):
     tag_regex = re.compile(r'<.*?>')

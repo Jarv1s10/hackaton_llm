@@ -13,3 +13,4 @@ openai
 aiogram
 python-dotenv
 setuptools
+fastapi "uvicorn[standard]"
