@@ -15,6 +15,7 @@ COPY . .
 
 # Set the environment variables
 ENV PYTHONUNBUFFERED=1
+ENV IS_DOCKER=1
 
 # Run the Telegram bot
 CMD ["python", "main.py"]

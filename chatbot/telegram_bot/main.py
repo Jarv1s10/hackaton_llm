@@ -13,12 +13,13 @@ load_dotenv(os.path.join(os.path.dirname(__file__), '.env'))
 TELEGRAM_TOKEN = os.getenv('TELEGRAM_TOKEN')
 
 # ------------- WEBSERVER -------------
-API_HOST = 'api'
+API_HOST = 'api' if os.getenv('IS_DOCKER') else 'localhost'
 HEADERS = {
     'accept': 'application/json'
 }
 
 # ------------- TELEGRAM OBEJCTS -------------
+
 bot = Bot(token=TELEGRAM_TOKEN)
 storage = MemoryStorage()
 dp = Dispatcher(bot, storage=storage)
