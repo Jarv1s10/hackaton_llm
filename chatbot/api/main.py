@@ -13,6 +13,7 @@ from langchain.vectorstores import Weaviate
 from langchain.llms import OpenAI, FakeListLLM
 from langchain.memory import ConversationTokenBufferMemory
 from langchain.cache import InMemoryCache
+from langchain.callbacks import get_openai_callback
 
 try:
     from process_doc_page import process_doc_page
@@ -114,7 +115,6 @@ class ChatInfo(BaseModel):
 
 @app.post('/chat/')
 def get_llm_model_answer(chat: ChatInfo):
-    fake_llm = FakeListLLM(cache=True, responses=['fake llm response'])
     memory = ConversationTokenBufferMemory(llm=LLM, max_token_limit=LLM_TOKEN_LIMIT // 2)
     for inpt, out in chat.history:
         memory.save_context({'input': inpt}, {'output': out})
@@ -129,10 +129,9 @@ def get_llm_model_answer(chat: ChatInfo):
     history = memory.load_memory_variables({})['history']
     prompt_to_llm = '\n'.join([SYSTEM_MESSAGE, history, f'Human: {chat.user_message}', f'Summaries:\n{summaries}', 'AI: '])
 
-    llm_answer = fake_llm.predict(prompt_to_llm)
-    # with get_openai_callback() as cb:
-    #     llm_answer = LLM.predict(prompt_to_llm)
-    #     print(cb)
+    with get_openai_callback() as cb:
+        llm_answer = LLM.predict(prompt_to_llm)
+        print(cb)
 
     sources = [doc.metadata for doc in relevant_docs]
 
