@@ -80,7 +80,8 @@ async def text_message_handler(message: types.Message):
         'user_message': message.text.strip(),
         'history': session.history
     }
-    r = requests.post(f'http://{API_HOST}:8000/chat/', json=data, headers=HEADERS)
+    r = requests.post(f'http://{API_HOST}:8000/chat/v2/', json=data, headers=HEADERS)
+
     if r.status_code != 200:
         await bot_message.edit_text(f'Something went wrong with chat request =(\nStatus code: {r.status_code}')
         return

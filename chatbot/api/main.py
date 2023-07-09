@@ -17,6 +17,8 @@ from langchain.memory import ConversationTokenBufferMemory, ConversationBufferMe
 from langchain.cache import InMemoryCache
 from langchain.callbacks import get_openai_callback
 from langchain.schema import Document
+from langchain.prompts.prompt import PromptTemplate
+from langchain.chains.conversational_retrieval.prompts import CONDENSE_QUESTION_PROMPT
 
 try:
     from process_doc_page import process_doc_page
@@ -38,12 +40,15 @@ db = Weaviate(client, 'RGDocs', 'text',
 
 langchain.llm_cache = InMemoryCache()
 LLM = OpenAI(cache=True, model_name="text-davinci-003", openai_api_key=OPENAI_API_KEY, max_tokens=1500)
-LLM_TOKEN_LIMIT = LLM.max_context_size - 1000
+LLM_TOKEN_LIMIT = LLM.max_context_size - 500
 
 with open(os.path.join(os.path.dirname(__file__), 'system_message.txt'), 'r') as f:
     SYSTEM_MESSAGE = f.read()
 
-app = FastAPI()
+with open(os.path.join(os.path.dirname(__file__), 'system_message_template.txt'), 'r') as f:
+    SYSTEM_MESSAGE_TEMPLATE = PromptTemplate.from_template(f.read())
+
+app = FastAPI(debug=True)
 
 
 @app.get('/test/')
@@ -152,4 +157,44 @@ def get_llm_model_answer(chat: ChatInfo):
 
     sources = [doc.metadata for doc in relevant_docs]
 
+    return {'llm_answer': llm_answer, 'sources': sources}
+
+
+@app.post('/chat/v2/')
+def get_chat_v2_answer(chat: ChatInfo):
+    memory = ConversationTokenBufferMemory(llm=LLM, max_token_limit=LLM_TOKEN_LIMIT // 2)
+    for inpt, out in chat.history:
+        memory.save_context({'input': inpt}, {'output': out})
+
+    history = memory.load_memory_variables({})['history']
+    if history:
+        prompt1 = CONDENSE_QUESTION_PROMPT.format(chat_history=history, question=chat.user_message)
+
+        while True:
+            print('Get condenced question:')
+            with get_openai_callback() as cb:
+                condenced_question = LLM.predict(prompt1)
+                print(cb)
+            if condenced_question.strip():
+                break
+            print('RETRY...')
+    else:
+        condenced_question = chat.user_message
+
+    relevant_docs = db.similarity_search(condenced_question)
+    relevant_docs = reduce_tokens_below_limit(relevant_docs, LLM_TOKEN_LIMIT // 2, LLM.get_num_tokens)
+    context = '\n\n'.join([doc.page_content for doc in relevant_docs])
+
+    prompt2 = SYSTEM_MESSAGE_TEMPLATE.format(context=context, question=condenced_question)
+
+    while True:
+        print('Get answer to a question:')
+        with get_openai_callback() as cb:
+            llm_answer = LLM.predict(prompt2)
+            print(cb)
+        if llm_answer.strip():
+            break
+        print('RETRY...')
+
+    sources = [doc.metadata for doc in relevant_docs]
     return {'llm_answer': llm_answer, 'sources': sources}
