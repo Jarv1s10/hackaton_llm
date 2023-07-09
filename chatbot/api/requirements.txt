@@ -1,0 +1,9 @@
+beautifulsoup4
+langchain
+tiktoken
+weaviate-client
+openai
+python-dotenv
+setuptools
+fastapi
+uvicorn[standard]

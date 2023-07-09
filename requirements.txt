@@ -1,4 +1,16 @@
-markdown
-langchain
-numpy
 jupyter
+markdown
+pyyaml
+tqdm
+numpy
+pandas
+langchain
+tiktoken
+plotly
+seaborn
+weaviate-client
+openai
+aiogram
+python-dotenv
+setuptools
+fastapi "uvicorn[standard]"
