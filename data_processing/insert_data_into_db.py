@@ -1,7 +1,11 @@
 import os
 import re
 import json
-import getpass
+import sys
+
+sys.path.append(
+    os.path.join(os.path.dirname(__file__), os.pardir)
+)
 
 import yaml
 import weaviate
@@ -9,8 +13,9 @@ import weaviate
 from langchain.schema import Document
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Weaviate
+from dotenv import load_dotenv
 
-from app.api.process_doc_page import process_doc_page
+from chatbot.api.process_doc_page import process_doc_page
 
 def delete_html_tags_regex(text):
     tag_regex = re.compile(r'<.*?>')
@@ -61,6 +66,9 @@ def get_sections_documents():
 
 
 if __name__ == '__main__':
+    load_dotenv(
+        os.path.join(os.path.dirname(__file__), os.pardir, 'chatbot', 'api', '.env')
+    )
     docs_path = os.path.join(os.path.dirname(__file__), os.pardir, 'preprocessed_data', 'documents.json')
 
     if os.path.isfile(docs_path):
@@ -73,12 +81,14 @@ if __name__ == '__main__':
 
     docs = [Document(**d) for d in docs]
 
-    os.environ['OPENAI_API_KEY'] = getpass.getpass("OpenAI API Key:")
-    WEAVIATE_API_KEY = getpass.getpass("Weaviate API Key:")
-    WEAVIATE_URL = getpass.getpass("Weaviate URL:")
+    # os.environ['OPENAI_API_KEY'] = getpass.getpass("OpenAI API Key:")
+    # WEAVIATE_API_KEY = getpass.getpass("Weaviate API Key:")
+    # WEAVIATE_URL = getpass.getpass("Weaviate URL:")
 
-    client = weaviate.Client(url=WEAVIATE_URL,
-                             auth_client_secret=weaviate.AuthApiKey(api_key=WEAVIATE_API_KEY))
+    client = weaviate.Client(
+        url=os.getenv('WEAVIATE_URL'),
+        auth_client_secret=weaviate.AuthApiKey(api_key=os.getenv('WEAVIATE_API_KEY'))
+    )
 
     embeddings = OpenAIEmbeddings()
     db = Weaviate.from_documents(docs, embeddings, client=client, index_name='RGDocs', by_text=False)
