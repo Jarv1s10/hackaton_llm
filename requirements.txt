@@ -1,0 +1,8 @@
+tqdm
+langchain
+tiktoken
+weaviate-client
+openai
+gradio
+python-dotenv
+pydantic
