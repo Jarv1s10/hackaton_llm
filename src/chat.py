@@ -8,15 +8,17 @@ import langchain
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.vectorstores import Weaviate
 from langchain.llms import OpenAI
+# from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationTokenBufferMemory, ConversationBufferMemory
 from langchain.cache import InMemoryCache
 from langchain.callbacks import get_openai_callback
 from langchain.schema import Document
+# from langchain.schema.messages import SystemMessage, HumanMessage, AIMessage
 from langchain.prompts.prompt import PromptTemplate
 
-# from dotenv import load_dotenv, find_dotenv
+from dotenv import load_dotenv
 
-# load_dotenv(find_dotenv())
+load_dotenv()
 
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
@@ -81,7 +83,15 @@ def get_chat_answer(chat: ChatInfo):
     else:
         condenced_question = chat.user_message
 
-    relevant_docs = db.similarity_search(condenced_question)
+    relevant_docs = db.similarity_search(
+        condenced_question,
+        where_filter={
+            'path': ["short_site_name"],
+            'operator': 'Equal',
+            'valueString': 'Sfcc'
+        }
+    )
+
     relevant_docs = reduce_tokens_below_limit(relevant_docs, LLM_TOKEN_LIMIT // 2, LLM.get_num_tokens)
     context = '\n\n'.join([doc.page_content for doc in relevant_docs])
 

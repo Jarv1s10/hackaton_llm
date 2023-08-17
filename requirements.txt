@@ -6,3 +6,4 @@ openai
 gradio
 python-dotenv
 pydantic
+beautifulsoup4
